@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Responsive table scroll hints */
+@media (max-width: 640px) {
+  .overflow-x-auto::-webkit-scrollbar {
+    height: 4px;
+  }
+  .overflow-x-auto::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 2px;
+  }
+  .overflow-x-auto::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal overflow on body */
+body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
